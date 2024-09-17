@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parking_Lot.views.Registrar"
+             BackgroundColor="#063A34"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="30" VerticalOptions="CenterAndExpand" Spacing="20">
+            <!-- Título del formulario -->
+            <Label Text="REGISTRO :" 
+               TextColor="White" 
+               FontSize="24"
+               HorizontalOptions="Start"/>
+
+            <!-- Campo de Nombre -->
+            <Entry Placeholder="NOMBRE :" 
+               BackgroundColor="#D6D6D6" 
+               TextColor="Black" 
+               HeightRequest="50"/>
+
+            <!-- Campo de Apellido -->
+            <Entry Placeholder="APELLIDO :" 
+               BackgroundColor="#D6D6D6" 
+               TextColor="Black" 
+               HeightRequest="50"/>
+
+            <!-- Campo de Teléfono -->
+            <Entry Placeholder="TELEFONO :" 
+               BackgroundColor="#D6D6D6" 
+               TextColor="Black" 
+               HeightRequest="50"
+               Keyboard="Telephone"/>
+
+            <!-- Campo de DNI -->
+            <Entry Placeholder="DNI :" 
+               BackgroundColor="#D6D6D6" 
+               TextColor="Black" 
+               HeightRequest="50"
+               Keyboard="Numeric"/>
+
+            <!-- Campo de Número de Placa -->
+            <Entry Placeholder="N° PLACA :" 
+               BackgroundColor="#D6D6D6" 
+               TextColor="Black" 
+               HeightRequest="50"/>
+
+            <!-- Campo de Marca -->
+            <Entry Placeholder="MARCA :" 
+               BackgroundColor="#D6D6D6" 
+               TextColor="Black" 
+               HeightRequest="50"/>
+
+            <!-- Campo de Modelo -->
+            <Entry Placeholder="MODELO :" 
+               BackgroundColor="#D6D6D6" 
+               TextColor="Black" 
+               HeightRequest="50"/>
+
+            <!-- Botón de Registro -->
+            <Button Text="REGISTRARSE"
+                BackgroundColor="#00FFA3"
+                TextColor="Black"
+                HeightRequest="50"
+                CornerRadius="10"
+                VerticalOptions="End"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

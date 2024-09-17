@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parking_Lot.MainPage"
+             BackgroundColor="#063A34">
+
+    <StackLayout Padding="20" VerticalOptions="CenterAndExpand" Spacing="20">
+
+        <!-- Imagen -->
+        <Image Source="img/Parking_lot.png" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center" 
+               HeightRequest="400" 
+               WidthRequest="400"/>
+
+        <!-- Botón Iniciar Sesión -->
+        <Button Text="Iniciar Sesión"
+                BackgroundColor="#28B463"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50"
+                Clicked="OnLoginButtonClicked"
+                />
+
+        <!-- Botón Registrarse -->
+        <Button Text="Registrarse"
+                BackgroundColor="#28B463"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50"
+                Clicked="OnRegisterButtonClicked"
+                />
+
+    </StackLayout>
+
+</ContentPage>

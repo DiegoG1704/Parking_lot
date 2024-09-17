@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parking_Lot.views.Number"
+             BackgroundColor="#063A34">
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <!-- Título principal -->
+            <Label Text="INTRODUCE TU NUMERO DE TELEFONO"
+               TextColor="White"
+               FontSize="Medium"
+               HorizontalOptions="CenterAndExpand"
+               Margin="0,10,0,0"/>
+
+            <!-- Subtítulo -->
+            <Label Text="Te enviaremos un código para verificar tu número telefónico"
+               TextColor="White"
+               FontSize="Small"
+               HorizontalOptions="CenterAndExpand"
+               Margin="0,10,0,20"/>
+
+            <!-- Entrada de número de teléfono -->
+            <Frame BorderColor="Gray"
+               CornerRadius="10"
+               Padding="10"
+               HasShadow="False"
+               BackgroundColor="#1C1F1F">
+                <StackLayout Orientation="Horizontal">
+                    <!-- País y bandera (Simulación de Picker) -->
+                    <Picker Title="Selecciona país"
+                        TextColor="White"
+                        HorizontalOptions="Start">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>🇵🇪 +51</x:String>
+                                <!-- Puedes agregar más países si es necesario -->
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <!-- Entrada para número de teléfono -->
+                    <Entry Placeholder="Número de teléfono"
+                       Keyboard="Telephone"
+                       TextColor="White"
+                       HorizontalOptions="FillAndExpand"
+                       PlaceholderColor="Gray"
+                       BackgroundColor="Transparent"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Botón para enviar el código -->
+            <Button Text="ENVIAR CODIGO"
+                BackgroundColor="#00FFB2"
+                TextColor="White"
+                FontSize="Medium"
+                CornerRadius="20"
+                HorizontalOptions="FillAndExpand"
+                Margin="0,30,0,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

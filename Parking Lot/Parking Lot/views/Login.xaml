@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parking_Lot.views.Login"
+             BackgroundColor="#063A34">
+    <ContentPage.Content>
+        <StackLayout Padding="30" VerticalOptions="CenterAndExpand" Spacing="20">
+
+            <!-- Título del formulario -->
+            <Label Text="Iniciar Sesion :" 
+           TextColor="White" 
+           FontSize="24"
+           HorizontalOptions="Start"/>
+
+            <!-- Campo de Nombre -->
+            <Entry Placeholder="Usuario :" 
+           BackgroundColor="#D6D6D6" 
+           TextColor="Black" 
+           HeightRequest="50"/>
+
+            <!-- Campo de Apellido -->
+            <Entry Placeholder="Contraseña :" 
+           BackgroundColor="#D6D6D6" 
+           TextColor="Black" 
+           HeightRequest="50"/>
+
+            <!-- Botón de Registro -->
+            <Button Text="Iniciar Sesion"
+            BackgroundColor="#00FFA3"
+            TextColor="Black"
+            HeightRequest="50"
+            CornerRadius="10"
+            VerticalOptions="End"
+            Clicked="OnLoginButtonNumber"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
