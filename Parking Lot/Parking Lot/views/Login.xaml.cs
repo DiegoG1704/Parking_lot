@@ -16,10 +16,10 @@ namespace Parking_Lot.views
 		{
 			InitializeComponent();
 		}
-		private async void OnLoginButtonNumber(object sender, EventArgs e)
+		private async void OnLoginButtonEstac(object sender, EventArgs e)
 		{
 			// Navegación a la página de inicio de sesión (Login.xaml en la carpeta Views)
-			await Application.Current.MainPage.Navigation.PushModalAsync(new Number());
+			await Application.Current.MainPage.Navigation.PushModalAsync(new Index());
 		}
 	}
 }

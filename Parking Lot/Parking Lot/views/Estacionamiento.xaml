@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parking_Lot.views.Estacionamiento"
+             BackgroundColor="#162826">
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Sección del título -->
+            <StackLayout BackgroundColor="#063A34" HeightRequest="80" VerticalOptions="Start">
+                <Label Text="Estacionamiento"
+                       TextColor="White"
+                       FontSize="24"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       Margin="10" />
+            </StackLayout>
+
+            <!-- Contenedor para los botones -->
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         VerticalOptions="CenterAndExpand"
+                         Spacing="1">
+                <!-- Botón Libre -->
+                <Button Text="Libre"
+                        x:Name="botonLibre"
+                        BackgroundColor="#182724"
+                        TextColor="White"
+                        Clicked="OnBotonLibreClicked"
+                        Margin="5"
+                        WidthRequest="150"/>
+
+                <!-- Botón Ocupado -->
+                <Button Text="Ocupado"
+                        x:Name="botonOcupado"
+                        BackgroundColor="#182724"
+                        TextColor="White"
+                        Clicked="OnBotonOcupadoClicked"
+                        Margin="5"
+                        WidthRequest="150"/>
+            </StackLayout>
+            <!-- Tabla enumerada del 1 al 16 con 2 columnas -->
+            <Grid Padding="10"
+                  VerticalOptions="EndAndExpand"
+                  HorizontalOptions="CenterAndExpand"
+                  WidthRequest="500"
+                  HeightRequest="800">
+                <!-- Ajusta el tamaño del Grid -->
+                <!-- Definir 2 columnas y 8 filas -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Añadir números del 1 al 16 -->
+                <Label Text="1" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="2" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="3" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="4" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="5" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="6" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Image Source="./img/car1.png" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="360" HeightRequest="360"/>
+                <Label Text="8" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="9" Grid.Row="4" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="10" Grid.Row="4" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="11" Grid.Row="5" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="12" Grid.Row="5" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="13" Grid.Row="6" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="14" Grid.Row="6" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="15" Grid.Row="7" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+                <Label Text="16" Grid.Row="7" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

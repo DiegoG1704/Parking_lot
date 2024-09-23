@@ -62,7 +62,8 @@
                 TextColor="Black"
                 HeightRequest="50"
                 CornerRadius="10"
-                VerticalOptions="End"/>
+                VerticalOptions="End"
+                Clicked="OnLoginButtonNumber"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

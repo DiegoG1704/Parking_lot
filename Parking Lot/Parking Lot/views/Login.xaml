@@ -11,7 +11,6 @@
            TextColor="White" 
            FontSize="24"
            HorizontalOptions="Start"/>
-
             <!-- Campo de Nombre -->
             <Entry Placeholder="Usuario :" 
            BackgroundColor="#D6D6D6" 
@@ -31,7 +30,7 @@
             HeightRequest="50"
             CornerRadius="10"
             VerticalOptions="End"
-            Clicked="OnLoginButtonNumber"/>
+            Clicked="OnLoginButtonEstac"/>
 
         </StackLayout>
     </ContentPage.Content>
